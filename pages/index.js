@@ -1,12 +1,8 @@
 import Head from "next/head";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-} from "react-icons/ai";
+import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { useState } from "react";
-import deved from "../public/dev-ed-wave.png";
+import { useState, useEffect } from "react";
+import deved from "../public/venath.jpeg";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
@@ -17,10 +13,18 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of animation in milliseconds
+      once: true // Whether animation should only happen once
+    });
+  }, []);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -31,7 +35,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">developedbyed</h1>
+            <h1 className="font-burtons text-xl">Venath</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -49,21 +53,22 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 py-10">
+          <div className="text-center p-10 py-10" data-aos="fade-in">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Dimitri Marco
+              Venath Randima
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               Developer and designer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+            I'm Venath Randima, currently pursuing my degree in Software Engineering at SLIIT.
+             I'm actively seeking collaborations with driven individuals who have the ability to adapt to any situation and demonstrate a proven potential to foster personal and team growth   
+           
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillYoutube />
+              <a href="#"><AiFillTwitterCircle /></a>
+              <a href="https://www.linkedin.com/in/venath-randima-b3b425281/"><AiFillLinkedin /></a>
+              <a href="https://www.youtube.com/@team_ramp"><AiFillYoutube /></a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
@@ -71,7 +76,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div>
+          {/* <div>
             <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
@@ -85,8 +90,8 @@ export default function Home() {
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
-          </div>
-          <div className="lg:flex gap-10">
+          </div> */}
+          {/* <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
@@ -127,25 +132,21 @@ export default function Home() {
               <p className="text-gray-800 py-1">Skype</p>
               <p className="text-gray-800 py-1">Google Meet</p>
             </div>
-          </div>
+          </div> */}
         </section>
         <section className="py-10">
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talented people to create digital products
-              for both business and consumer use.
+            Since embarking on my undergraduate journey in Software Engineering at SLIIT, I've been actively seeking opportunities to broaden my horizons. I've engaged in collaborative projects, explored various aspects of software development, and honed my skills in adapting to different situations.
+            Currently, I'm open to collaborations and eager to connect with driven individuals who share a passion for growth and innovation
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          {/* <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
@@ -200,48 +201,86 @@ export default function Home() {
                 src={web6}
               />
             </div>
-          </div>
+          </div> */}
         </section>
         <section>
-          <div>
-            <h3 className="text-3xl py-1 dark:text-white">Academic Projects</h3>
-            <div className="py-5">
-              <h4 className="text-2xl py-2 dark:text-white">First Year First Semester (GPA - 2.987)</h4>
-              <ul className="list-disc list-inside text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <li>Introduction to Programming (C Language)</li>
-                <li>Introduction to Computer Systems</li>
-                <li>Communication Skills</li>
-                <li>Mathematics for Computing</li>
-              </ul>
-            </div>
-            <div className="py-5">
-              <h4 className="text-2xl py-2 dark:text-white">First Year Second Semester (GPA - 3.285)</h4>
-              <ul className="list-disc list-inside text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <li>Object Oriented Concepts (C++ Language)</li>
-                <li>Software Process Modeling</li>
-                <li>English for Academic Purposes</li>
-                <li>Information Systems & Data Modeling</li>
-                <li>Internet & Web Technologies (HTML, PHP, JS)</li>
-              </ul>
-              <p className="py-2 text-gray-800 dark:text-gray-200">
-                Completing a group project on developing a website on "Online Land selling System" using HTML, PHP, CSS, JavaScript.
-              </p>
-            </div>
-            <div className="py-5">
-              <h4 className="text-2xl py-2 dark:text-white">Second Year First Semester (GPA)</h4>
-              <ul className="list-disc list-inside text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <li>Object Oriented Programming (Java Language)</li>
-                <li>Operating Systems and System Administration</li>
-                <li>Computer Networks</li>
-                <li>Database Management Systems</li>
-                <li>Software Engineering</li>
-              </ul>
-              <p className="py-2 text-gray-800 dark:text-gray-200">
-                Completing a group project on developing a web application on "Online medicine and drug ordering system" using MVC Architecture.
-              </p>
-            </div>
-          </div>
-        </section>
+  <div>
+    <h3 className="text-3xl py-1 dark:text-white">Academic Projects</h3>
+    <div className="py-5">
+      <h4 className="text-2xl py-2 dark:text-white">First Year First Semester (GPA - 3.07)</h4>
+      <ul className="list-disc list-inside text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+        <li>Introduction to Programming (C Language)</li>
+        <li>Introduction to Computer Systems</li>
+        <li>Communication Skills</li>
+        <li>Mathematics for Computing</li>
+      </ul>
+    </div>
+    <div className="py-5">
+      <h4 className="text-2xl py-2 dark:text-white">First Year Second Semester (GPA - 3.4)</h4>
+      <ul className="list-disc list-inside text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+        <li>Object Oriented Concepts (C++ Language)</li>
+        <li>Software Process Modeling</li>
+        <li>English for Academic Purposes</li>
+        <li>Information Systems & Data Modeling</li>
+        <li>Internet & Web Technologies (HTML, PHP, JS)</li>
+      </ul>
+      <p className="py-2 text-gray-800 dark:text-gray-200">
+        Completing a group project on developing a website on "Online Land selling System" using HTML, PHP, CSS, JavaScript.
+        Repository: <a href="https://github.com/Venath/LandSale">LandSale</a>
+      </p>
+    </div>
+    <div className="py-5">
+      <h4 className="text-2xl py-2 dark:text-white">Second Year First Semester (GPA - 3.06)</h4>
+      <ul className="list-disc list-inside text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+        <li>Object Oriented Programming (Java Language)</li>
+        <li>Operating Systems and System Administration</li>
+        <li>Computer Networks</li>
+        <li>Database Management Systems</li>
+        <li>Software Engineering</li>
+      </ul>
+      <p className="py-2 text-gray-800 dark:text-gray-200">
+        Completing a group project on developing a web application on "Online medicine and drug ordering system" using MVC Architecture.
+        Repository: <a href="https://github.com/Venath/Med">Med</a>
+      </p>
+    </div>
+    <div className="py-5">
+      <h4 className="text-2xl py-2 dark:text-white">Second Year Second Semester (GPA )</h4>
+      <p className="py-2 text-gray-800 dark:text-gray-200">
+        Completing a group project on developing a web application on "Real Dancing Competition “BornToBattle”" using MERN Technology.
+        Repository: <a href="https://github.com/Venath/BornToBattle">BornToBattle</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+        <section>
+  <div>
+    <h3 className="text-3xl py-1 dark:text-white">Projects</h3>
+    <div className="py-5">
+      <h4 className="text-2xl py-2 dark:text-white">Mobile App: Online Art Gallery (Kotlin)</h4>
+    </div>
+    <div className="py-5">
+      <h4 className="text-2xl py-2 dark:text-white">Mobile Game: Game Of 15 (Kotlin)</h4>
+      <p className="py-2 text-gray-800 dark:text-gray-200">
+        Repository: <a href="https://github.com/Venath/GameOf15">GameOf15</a>
+      </p>
+    </div>
+    <div className="py-5">
+      <h4 className="text-2xl py-2 dark:text-white">Mobile Game: Number Guessing</h4>
+    </div>
+  </div>
+  <div>
+    <h3 className="text-3xl py-1 dark:text-white">Personal Projects</h3>
+
+    <div className="py-5">
+      <h4 className="text-2xl py-2 dark:text-white">Python Program: Find Gender and Birthday using NIC</h4>
+      <p className="py-2 text-gray-800 dark:text-gray-200">
+        Repository: <a href="https://github.com/Venath/FindBirthDay">FindBirthDay</a>
+      </p>
+    </div>
+  </div>
+</section>
+
       </main>
     </div>
   );
