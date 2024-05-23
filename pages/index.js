@@ -78,7 +78,7 @@ export default function Home() {
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
+              and collaborated with talented people to create digital products
               for both business and consumer use.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -87,11 +87,9 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Beautiful Designs
-              </h3>
+              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
               <p className="py-2">
                 Creating elegant designs suited for your needs following core
                 design theory.
@@ -104,43 +102,42 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
+              <h3 className="text-lg font-medium pt-8 pb-2">
                 Code your dream project
               </h3>
               <p className="py-2">
                 Do you have an idea for your next great website? Let's make it a
                 reality.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-teal-600">Development Tools I Use</h4>
+              <p className="text-gray-800 py-1">Visual Studio Code</p>
+              <p className="text-gray-800 py-1">Git</p>
+              <p className="text-gray-800 py-1">Next.js</p>
+              <p className="text-gray-800 py-1">Node.js</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
               <p className="py-2">
                 Are you interested in feedback for your current project? I can
                 give you tips and tricks to level it up.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-teal-600">Consulting Tools I Use</h4>
+              <p className="text-gray-800 py-1">Zoom</p>
+              <p className="text-gray-800 py-1">Skype</p>
+              <p className="text-gray-800 py-1">Google Meet</p>
             </div>
           </div>
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
+              and collaborated with talented people to create digital products
               for both business and consumer use.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -149,7 +146,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
+            <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -202,6 +199,46 @@ export default function Home() {
                 layout="responsive"
                 src={web6}
               />
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1 dark:text-white">Academic Projects</h3>
+            <div className="py-5">
+              <h4 className="text-2xl py-2 dark:text-white">First Year First Semester (GPA - 2.987)</h4>
+              <ul className="list-disc list-inside text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+                <li>Introduction to Programming (C Language)</li>
+                <li>Introduction to Computer Systems</li>
+                <li>Communication Skills</li>
+                <li>Mathematics for Computing</li>
+              </ul>
+            </div>
+            <div className="py-5">
+              <h4 className="text-2xl py-2 dark:text-white">First Year Second Semester (GPA - 3.285)</h4>
+              <ul className="list-disc list-inside text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+                <li>Object Oriented Concepts (C++ Language)</li>
+                <li>Software Process Modeling</li>
+                <li>English for Academic Purposes</li>
+                <li>Information Systems & Data Modeling</li>
+                <li>Internet & Web Technologies (HTML, PHP, JS)</li>
+              </ul>
+              <p className="py-2 text-gray-800 dark:text-gray-200">
+                Completing a group project on developing a website on "Online Land selling System" using HTML, PHP, CSS, JavaScript.
+              </p>
+            </div>
+            <div className="py-5">
+              <h4 className="text-2xl py-2 dark:text-white">Second Year First Semester (GPA)</h4>
+              <ul className="list-disc list-inside text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+                <li>Object Oriented Programming (Java Language)</li>
+                <li>Operating Systems and System Administration</li>
+                <li>Computer Networks</li>
+                <li>Database Management Systems</li>
+                <li>Software Engineering</li>
+              </ul>
+              <p className="py-2 text-gray-800 dark:text-gray-200">
+                Completing a group project on developing a web application on "Online medicine and drug ordering system" using MVC Architecture.
+              </p>
             </div>
           </div>
         </section>
