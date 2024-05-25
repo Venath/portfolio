@@ -412,23 +412,35 @@ export default function Home() {
               </h3>
             </u>
             <div className="py-5">
+            <ul className="list-disc text-md py-2 leading-8 text-gray-800 text-[30px] dark:text-gray-200">
+      <li>
               <h4 className="text-2xl py-2 dark:text-white">
                 Creating my own portfolio (2024)
               </h4>
+              </li>
+    </ul>
               <p className="py-2 text-gray-800 dark:text-gray-200">
                 Repository:{" "}
                 <a href="https://venath.github.io/portfolio/">Portfolio</a>
               </p>
             </div>
             <div className="py-5">
+            <ul className="list-disc text-md py-2 leading-8 text-gray-800 text-[30px] dark:text-gray-200">
+      <li>
               <h4 className="text-2xl py-2 dark:text-white">
                 Creating python program to find gender and birthday using NIC
                 (2019)
               </h4>
+              </li>
+    </ul>
               <p className="py-2 text-gray-800 dark:text-gray-200">
                 Repository:{" "}
                 <a href="https://github.com/Venath/FindBirthDay">
                   FindBirthDay
+                </a>
+                <br></br>
+                <a href="http://venath.pythonanywhere.com/">
+                 Online FindDOB
                 </a>
               </p>
             </div>
