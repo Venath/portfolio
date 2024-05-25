@@ -295,19 +295,13 @@ export default function Home() {
             </div>
             <div className="py">
               <h4 className="text-2xl py dark:text-white">
+                First Year Second Semester (GPA - 3.04)
+              </h4>
+            </div>
+            <div className="py">
+              <h4 className="text-2xl py dark:text-white">
                 Second Year First Semester (GPA - 3.06)
               </h4>
-              {/*   <ul className="list-disc list-inside text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-         <li>Object Oriented Programming (Java Language)</li>
-       <li>Operating Systems and System Administration</li>
-        <li>Computer Networks</li>
-        <li>Database Management Systems</li>
-        <li>Software Engineering</li>
-      </ul> */}
-              {/* <p className="py-2 text-gray-800 dark:text-gray-200">
-        Completing a group project on developing a web application on "Online medicine and drug ordering system" using MVC Architecture.
-        Repository: <a href="https://github.com/Venath/Med">Med</a>
-      </p> */}
             </div>
             <div className="py">
               <h4 className="text-2xl py dark:text-white">
