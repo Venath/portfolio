@@ -41,7 +41,6 @@ export default function Home() {
       strings: [
         "Developer",
         "Designer",
-        "VideoGrapher",
         "Content Creator",
         "Athlete",
       ],
