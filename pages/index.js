@@ -437,6 +437,25 @@ export default function Home() {
                 </a>
               </p>
             </div>
+
+            <div className="py-5">
+            <ul className="list-disc text-md py-2 leading-8 text-gray-800 text-[30px] dark:text-gray-200">
+      <li>
+              <h4 className="text-2xl py-2 dark:text-white">
+                Creating URL Shortener
+              </h4>
+              </li>
+    </ul>
+              <p className="py-2 text-gray-800 dark:text-gray-200">
+                Repository:{" "}
+                <a href="https://github.com/Venath/url-shortner">
+                  UrlShortener
+                </a>
+            
+              </p>
+            </div>
+
+
           </div>
         </section>
       </main>
