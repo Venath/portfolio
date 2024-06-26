@@ -33,9 +33,9 @@ const Header = () => {
           <li className={activePath === '#projects' ? 'active' : ''}>
             <a href="#projects">Projects</a>
           </li>
-          <li className={activePath === '#contact' ? 'active' : ''}>
+          {/* <li className={activePath === '#contact' ? 'active' : ''}>
             <a href="#contact">Contact</a>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <style jsx>{`
