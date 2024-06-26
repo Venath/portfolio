@@ -35,6 +35,7 @@ export default function Home() {
       duration: 1000, // Duration of animation in milliseconds
       once: true, // Whether animation should only happen once
     });
+    
 
     // Initialize Typed.js
     const options = {
@@ -56,6 +57,8 @@ export default function Home() {
       typedRef.current.destroy();
     };
   }, []);
+
+  
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -314,7 +317,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="projects" className="min-h-screen">
           <br></br>
           <div>
   <u className="text-4xl py-1 dark:text-white">
@@ -457,6 +460,9 @@ export default function Home() {
 
 
           </div>
+        </section>
+        <section id="contact" className="min-h-screen">
+         <h1>Helloooooo</h1>
         </section>
       </main>
     </div>
