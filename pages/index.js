@@ -148,48 +148,7 @@ export default function Home() {
               programming and teaching.
             </p>
           </div> */}
-          <div className="lg:flex gap-10">
-            {/* <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
-              <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
-            </div> */}
-            {/* <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Code your dream project
-              </h3>
-              <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
-              </p>
-              <h4 className="py-4 text-teal-600">Development Tools I Use</h4>
-              <p className="text-gray-800 py-1">Visual Studio Code</p>
-              <p className="text-gray-800 py-1">Git</p>
-              <p className="text-gray-800 py-1">Next.js</p>
-              <p className="text-gray-800 py-1">Node.js</p>
-            </div> */}
-            {/* <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
-              <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
-              </p>
-              <h4 className="py-4 text-teal-600">Consulting Tools I Use</h4>
-              <p className="text-gray-800 py-1">Zoom</p>
-              <p className="text-gray-800 py-1">Skype</p>
-              <p className="text-gray-800 py-1">Google Meet</p>
-            </div> */}
-          </div>
+
         </section>
         <section className="py-10">
           <div>
@@ -267,7 +226,7 @@ export default function Home() {
         </section>
         <section>
           <u className="text-4xl py-5 dark:text-white">
-            <h3 className="text-4xl py-1 dark:text-white">Academics</h3>
+          <h3 className="text-4xl py-1 text-center dark:text-white">Academics</h3>
           </u>
           <div className="py-4">
             <div className="py">
@@ -319,12 +278,80 @@ export default function Home() {
 
         <section id="projects" className="min-h-screen">
           <br></br>
+          
           <div>
   <u className="text-4xl py-1 dark:text-white">
-    <h3 className="text-4xl py-1 dark:text-white">Academic Projects</h3>
-  </u>
+    
+  <div class="container mx-auto p-4">
+  <h3 className="text-4xl py-1 text-center dark:text-white">Academic Projects</h3>
+</div>
 
-  <div className="py-5">
+  </u>
+  
+  {/* <div className="lg:flex gap-10"> */}
+  <div class="container mx-auto p-4">
+
+
+
+  <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+
+      <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 class="text-2xl font-bold mb-2">Online Land selling System</h3>
+        <p>Completing a group project on developing a website on "Online Land selling System" using HTML, PHP, CSS, JavaScript</p>
+        <br/>
+        <p className="py-2 text-blue-500 " style={{ display: 'flex', alignItems: 'center' }}>
+      <a href="https://github.com/Venath/LandSale">Repository:  LandSale</a>
+      <AiFillGithub style={{ marginLeft: '0.5rem' }} />
+    </p>
+      </div>
+
+
+      <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+    <h3 className="text-2xl font-bold mb-2">Online Medicine and Drug Ordering System</h3>
+    <p>Completing a group project on developing a web application on "Online medicine and drug ordering system" using MVC Architecture</p>
+    <p className="py-2 text-blue-500 " style={{ display: 'flex', alignItems: 'center' }}>
+      <a href="https://github.com/Venath/Med" className="text-blue-500">Repository: Med</a>
+      <AiFillGithub style={{ marginLeft: '0.5rem' }} />
+    </p>
+  </div>
+
+   <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl my-5">
+    <h3 className="text-2xl font-bold mb-2">Real Dancing Competition “BornToBattle”</h3>
+    <p>Completing a group project on developing a web application on Real Dancing Competition “BornToBattle” using MERN Technology</p>
+    <p className="py-2 text-blue-500 " style={{ display: 'flex', alignItems: 'center' }}>
+      <a href="https://github.com/Venath/BornToBattle" className="text-blue-500">Repository: BornToBattle</a>
+      <AiFillGithub style={{ marginLeft: '0.5rem' }} />
+    </p>
+  </div>
+
+  <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl my-5">
+    <h3 className="text-2xl font-bold mb-2">Online Art Gallery</h3>
+    <p>Creating a mobile app on “Online Art Gallery” using Kotlin</p>
+  </div>
+
+  <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl my-5">
+    <h3 className="text-2xl font-bold mb-2">Game Of 15</h3>
+    <p>Creating a mobile game on “Game Of 15” using Kotlin</p>
+    <p className="py-2 text-blue-500 " style={{ display: 'flex', alignItems: 'center' }}>
+      <a href="https://github.com/Venath/GameOf15" className="text-blue-500">Repository: GameOf15</a>
+      <AiFillGithub style={{ marginLeft: '0.5rem' }} />
+    </p>
+  </div>
+
+  <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl my-5">
+    <h3 className="text-2xl font-bold mb-2">Number Guessing</h3>
+    <p>Creating a mobile game on “Number Guessing”</p>
+  </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+  {/* <div className="py-5">
     <ul className="list-disc text-md py-2 leading-8 text-gray-800 text-[30px] dark:text-gray-200">
       <li>
         <h4 className="text-2xl py-2 dark:text-white">
@@ -398,72 +425,51 @@ export default function Home() {
         </h4>
       </li>
     </ul>
-  </div>
+  </div> */}
 </div>
 
           <div className="py-5">
+
             <u className="text-4xl py-5 dark:text-white">
-              <h3 className="text-3xl py-1 dark:text-white">
+            <h3 className="text-4xl py-1 text-center dark:text-white">
                 Personal Projects
               </h3>
             </u>
-            <div className="py-5">
-            <ul className="list-disc text-md py-2 leading-8 text-gray-800 text-[30px] dark:text-gray-200">
-      <li>
-              <h4 className="text-2xl py-2 dark:text-white">
-                Creating my own portfolio (2024)
-              </h4>
-              </li>
-    </ul>
-              <p className="py-2 text-gray-800 dark:text-gray-200">
-                Repository:{" "}
-                <a href="https://venath.github.io/portfolio/">Portfolio</a>
-              </p>
-            </div>
-            <div className="py-5">
-            <ul className="list-disc text-md py-2 leading-8 text-gray-800 text-[30px] dark:text-gray-200">
-      <li>
-              <h4 className="text-2xl py-2 dark:text-white">
-                Creating python program to find gender and birthday using NIC
-                (2019)
-              </h4>
-              </li>
-    </ul>
-              <p className="py-2 text-gray-800 dark:text-gray-200">
-                Repository:{" "}
-                <a href="https://github.com/Venath/FindBirthDay">
-                  FindBirthDay
-                </a>
-                <br></br>
-                <a href="http://venath.pythonanywhere.com/">
-                 Online FindDOB
-                </a>
-              </p>
-            </div>
 
-            <div className="py-5">
-            <ul className="list-disc text-md py-2 leading-8 text-gray-800 text-[30px] dark:text-gray-200">
-      <li>
-              <h4 className="text-2xl py-2 dark:text-white">
-                Creating URL Shortener
-              </h4>
-              </li>
-    </ul>
-              <p className="py-2 text-gray-800 dark:text-gray-200">
-                Repository:{" "}
-                <a href="https://github.com/Venath/url-shortner">
-                  UrlShortener
-                </a>
-            
-              </p>
-            </div>
+            <div className="container mx-auto p-4">
+  <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+
+      <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 className="text-2xl font-bold mb-2">Creating my own portfolio using Next js(2024)</h3>
+        <p>Repository: <a href="https://venath.github.io/portfolio/" className="text-blue-500">Portfolio</a></p>
+      </div>
+
+      <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 className="text-2xl font-bold mb-2">Creating python program to find gender and birthday using NIC (2019)</h3>
+        <p>Repository: <a href="https://github.com/Venath/FindBirthDay" className="text-blue-500">FindBirthDay</a></p>
+        <p>Live: <a href="http://venath.pythonanywhere.com/" className="text-blue-500">Online FindDOB</a></p>
+      </div>
+
+      <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 className="text-2xl font-bold mb-2">Creating URL Shortener</h3>
+        <p>Repository: <a href="https://github.com/Venath/url-shortner" className="text-blue-500">UrlShortener</a></p>
+      </div>
+
+      <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 className="text-2xl font-bold mb-2">Creating Facebook clone using react</h3>
+        <p>Repository: <a href="https://github.com/Venath/facebook-clone" className="text-blue-500">Facebook Clone</a></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 
           </div>
         </section>
-        <section id="contact" className="min-h-screen">
-         <h1>Helloooooo</h1>
-        </section>
+
       </main>
     </div>
   );

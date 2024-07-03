@@ -39,6 +39,10 @@ const Header = () => {
         </ul>
       </nav>
       <style jsx>{`
+       nav {
+        //   display: flex;
+        //   justify-content: flex-end; /* Align items to the right */
+        }
         header {
           position: fixed;
           top: 0;
@@ -55,7 +59,7 @@ const Header = () => {
           padding: 0;
         }
         nav ul li {
-          margin-right: 1rem;
+          margin-right: 3rem;
         }
         nav ul li a {
           color: #fff;
