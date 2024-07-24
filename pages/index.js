@@ -461,7 +461,7 @@ export default function Home() {
         <p>Repository: <a href="https://github.com/Venath/facebook-clone" className="text-blue-500">Facebook Clone</a></p>
       </div>
 
-      <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+      <div className="flex flex-col bg-white p-4 shadow-lg transform transition-tVenath Randima CVransform hover:scale-105 hover:shadow-xl">
         <h3 className="text-2xl font-bold mb-2">Creating A Weather App</h3><b>Using JavaScript, Html and CSS</b>
         <p>Repository: <a href="https://github.com/Venath/Weather-app" className="text-blue-500">Weather App</a></p>
         <p>Live: <a href="https://venath.github.io/Weather-App/" className="text-blue-500">Weather App</a></p>
@@ -470,6 +470,13 @@ export default function Home() {
       <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
         <h3 className="text-2xl font-bold mb-2">Creating A Tic Tac Toe Game </h3><b>Using Java</b>
         <p style={{ display: 'flex', alignItems: 'center' }}>Repository: <a href="https://github.com/Venath/TicTacToe" className="text-blue-500">TicTacToe</a>  <AiFillGithub style={{ marginLeft: '0.5rem' }} /></p>
+      </div>
+
+      <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 className="text-2xl font-bold mb-2">Creating A Memory Game </h3><b>Using Javascript</b>
+        <p style={{ display: 'flex', alignItems: 'center' }}>Repository: <a href="https://github.com/Venath/TicTacToe" className="text-blue-500">Memory Game</a>  <AiFillGithub style={{ marginLeft: '0.5rem' }} /></p>
+        <p>Live: <a href="https://venath.github.io/Memory_Game/" className="text-blue-500">Memory Game</a></p>
+
       </div>
 
     </div>
