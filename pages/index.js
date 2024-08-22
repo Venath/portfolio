@@ -479,6 +479,13 @@ export default function Home() {
 
       </div>
 
+      <div className="flex flex-col bg-white p-4 shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 className="text-2xl font-bold mb-2">Creating a Currency Converter</h3><b>Using Javascript</b>
+        <p style={{ display: 'flex', alignItems: 'center' }}>Repository: <a href="https://github.com/Venath/currency_converter" className="text-blue-500">Currency Converter</a>  <AiFillGithub style={{ marginLeft: '0.5rem' }} /></p>
+       
+
+      </div>
+
     </div>
   </div>
 </div>
