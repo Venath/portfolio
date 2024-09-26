@@ -266,7 +266,7 @@ export default function Home() {
             </div>
             <div className="py">
               <h4 className="text-2xl py dark:text-white">
-                Second Year Second Semester (GPA )
+                Second Year Second Semester (GPA - 3.39 )
               </h4>
               {/* <p className="py-2 text-gray-800 dark:text-gray-200">
         Completing a group project on developing a web application on "Real Dancing Competition “BornToBattle”" using MERN Technology.
