@@ -492,16 +492,16 @@ export default function Home() {
                 label: "Year 3",
                 avg: "3.06",
                 semesters: [
-                  { label: "Semester 1", gpa: 3.3},
-                  { label: "Semester 2", gpa: 3.06 },
+                  { label: "Semester 1", gpa: 3.27},
+                  { label: "Semester 2", gpa: 3.4 },
                 ],
               },
               {
                 label: "Year 4",
                 avg: "3.06",
                 semesters: [
-                  { label: "Semester 1", gpa: 3.06 },
-                  { label: "Semester 2", gpa: 3.06 },
+                  { label: "Semester 1", gpa: 3.3 },
+                  { label: "Semester 2", gpa: - },
                 ],
               },
             ].map((year, i) => (
