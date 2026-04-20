@@ -277,8 +277,8 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="venath.pdf"
-                  download="venath.pdf"
+                  href="Venath Randima Software Engineer.pdf"
+                  download="Venath Randima Software Engineer.pdf"
                 >
                   Resume
                 </a>
