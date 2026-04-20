@@ -185,7 +185,52 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    const movePupil = (eyeRef, pupilRef, mx, my) => {
+      if (!eyeRef.current || !pupilRef.current) return;
+      const rect = eyeRef.current.getBoundingClientRect();
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      const dx = mx - cx;
+      const dy = my - cy;
+      const angle = Math.atan2(dy, dx);
+      const maxR = rect.width / 4;
+      const dist = Math.min(Math.hypot(dx, dy), maxR);
+      const x = Math.cos(angle) * dist;
+      const y = Math.sin(angle) * dist;
+      pupilRef.current.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
+    };
 
+    const handleMove = (e) => {
+      movePupil(leftEyeRef, leftPupilRef, e.clientX, e.clientY);
+      movePupil(rightEyeRef, rightPupilRef, e.clientX, e.clientY);
+    };
+
+    window.addEventListener("mousemove", handleMove);
+    return () => window.removeEventListener("mousemove", handleMove);
+  }, []);
+
+  useEffect(() => {
+    if (!academicsRef.current) return;
+    let timer;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !showEyes) {
+            timer = setTimeout(() => setShowEyes(true), 4000);
+          } else if (!entry.isIntersecting) {
+            clearTimeout(timer);
+          }
+        });
+      },
+      { threshold: 0.25 }
+    );
+    observer.observe(academicsRef.current);
+    return () => {
+      clearTimeout(timer);
+      observer.disconnect();
+    };
+  }, [showEyes]);
 
   return (
     <div className={darkMode ? "dark" : ""}>
