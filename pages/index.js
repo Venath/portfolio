@@ -422,7 +422,7 @@ export default function Home() {
         >
           <div
             aria-hidden="true"
-            className={`hidden md:flex absolute top-8 right-0 gap-3 z-10 transition-all duration-700 ease-out ${
+            className={`flex absolute top-2 right-1 gap-1.5 sm:top-3 sm:right-2 sm:gap-2 md:top-8 md:right-0 md:gap-3 z-20 transition-all duration-700 ease-out ${
               showEyes
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 -translate-y-3 pointer-events-none"
@@ -430,21 +430,21 @@ export default function Home() {
           >
             <div
               ref={leftEyeRef}
-              className="relative w-12 h-12 md:w-14 md:h-14 rounded-full bg-white dark:bg-gray-100 border-[3px] border-teal-500 shadow-lg"
+              className="relative w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-white dark:bg-gray-100 border-2 sm:border-[3px] border-teal-500 shadow-lg"
             >
               <div
                 ref={leftPupilRef}
-                className="absolute top-1/2 left-1/2 w-4 h-4 bg-gray-900 rounded-full will-change-transform"
+                className="absolute top-1/2 left-1/2 w-[11px] h-[11px] sm:w-[13px] sm:h-[13px] md:w-4 md:h-4 bg-gray-900 rounded-full will-change-transform"
                 style={{ transform: "translate(-50%, -50%)" }}
               />
             </div>
             <div
               ref={rightEyeRef}
-              className="relative w-12 h-12 md:w-14 md:h-14 rounded-full bg-white dark:bg-gray-100 border-[3px] border-teal-500 shadow-lg"
+              className="relative w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-white dark:bg-gray-100 border-2 sm:border-[3px] border-teal-500 shadow-lg"
             >
               <div
                 ref={rightPupilRef}
-                className="absolute top-1/2 left-1/2 w-4 h-4 bg-gray-900 rounded-full will-change-transform"
+                className="absolute top-1/2 left-1/2 w-[11px] h-[11px] sm:w-[13px] sm:h-[13px] md:w-4 md:h-4 bg-gray-900 rounded-full will-change-transform"
                 style={{ transform: "translate(-50%, -50%)" }}
               />
             </div>
