@@ -47,6 +47,30 @@ export default function Home() {
       live: "https://venath.github.io/portfolio/",
     },
     {
+      title: "Academic Scheduler",
+      tag: "Academic · Microservices",
+      description:
+        "A microservices-based academic scheduling system with AI-powered conflict detection and optimized timetable management. Containerized with Docker & Kubernetes and monitored with Prometheus and Grafana.",
+      stack: [
+        "Spring Boot",
+        "Flask",
+        "React",
+        "MongoDB",
+        "Redis",
+        "Docker",
+        "Kubernetes",
+      ],
+      repo: "https://github.com/Venath/academic-scheduler",
+    },
+    {
+      title: "SkillHive",
+      tag: "Academic · Full Stack",
+      description:
+        "A full-stack social learning platform where users share skills, build learning plans, and engage through posts, likes, and comments. Secured with JWT authentication.",
+      stack: ["React", "Spring Boot", "MySQL", "JWT"],
+      repo: "https://github.com/Venath/SkillHive",
+    },
+    {
       title: "BornToBattle",
       tag: "Academic · Full Stack",
       description:
@@ -556,14 +580,14 @@ export default function Home() {
                 key={project.title}
                 data-aos="fade-up"
                 data-aos-delay={(i % 6) * 100}
-                className="group relative flex flex-col bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="group relative flex flex-col bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-2xl hover:shadow-teal-500/25 dark:hover:shadow-teal-500/15 transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="h-2 bg-gradient-to-r from-cyan-500 to-teal-500" />
+                <div className="h-2 bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-500 bg-[length:200%_100%] bg-left group-hover:bg-right transition-[background-position] duration-700" />
                 <div className="flex flex-col flex-1 p-6">
                   <span className="text-xs uppercase tracking-wider text-teal-600 dark:text-teal-400 font-semibold mb-2">
                     {project.tag}
                   </span>
-                  <h4 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+                  <h4 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">
                     {project.title}
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed flex-1">
@@ -573,7 +597,7 @@ export default function Home() {
                     {project.stack.map((tech) => (
                       <span
                         key={tech}
-                        className="text-xs px-2 py-1 rounded-full bg-teal-50 text-teal-700 dark:bg-teal-900/40 dark:text-teal-300"
+                        className="text-xs px-2 py-1 rounded-full bg-teal-50 text-teal-700 dark:bg-teal-900/40 dark:text-teal-300 group-hover:bg-teal-100 dark:group-hover:bg-teal-800/60 transition-colors duration-300"
                       >
                         {tech}
                       </span>
@@ -649,8 +673,9 @@ export default function Home() {
           <div className="max-w-4xl mx-auto pb-16 space-y-6">
             <div
               data-aos="fade-up"
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl"
+              className="group relative bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/25 dark:hover:shadow-cyan-500/15"
             >
+              <div className="absolute left-0 top-0 bottom-0 w-0 group-hover:w-1.5 bg-gradient-to-b from-cyan-500 to-teal-500 transition-all duration-500 z-10" />
               <div className="h-2 bg-gradient-to-r from-cyan-500 to-teal-500" />
               <div className="p-6 md:p-8">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
@@ -740,8 +765,9 @@ export default function Home() {
             <div
               data-aos="fade-up"
               data-aos-delay="100"
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl"
+              className="group relative bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/25 dark:hover:shadow-cyan-500/15"
             >
+              <div className="absolute left-0 top-0 bottom-0 w-0 group-hover:w-1.5 bg-gradient-to-b from-cyan-500 to-teal-500 transition-all duration-500 z-10" />
               <div className="h-2 bg-gradient-to-r from-cyan-500 to-teal-500" />
               <div className="p-6 md:p-8">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
@@ -780,8 +806,9 @@ export default function Home() {
             <div
               data-aos="fade-up"
               data-aos-delay="200"
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl"
+              className="group relative bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/25 dark:hover:shadow-cyan-500/15"
             >
+              <div className="absolute left-0 top-0 bottom-0 w-0 group-hover:w-1.5 bg-gradient-to-b from-cyan-500 to-teal-500 transition-all duration-500 z-10" />
               <div className="h-2 bg-gradient-to-r from-cyan-500 to-teal-500" />
               <div className="p-6 md:p-8">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
